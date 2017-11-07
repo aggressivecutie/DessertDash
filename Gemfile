@@ -24,11 +24,18 @@ gem 'devise'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails'
 
-#shrine for file attachment
+#shrine for file attachment and image processing gems
 gem "shrine"
+gem "shrine-cloudinary"
+
+
 #rolify to assign different users roles.
 gem "rolify"
 gem 'cancancan', '~> 2.0'
+
+#figaro for API SUPERSECRETS!
+gem "figaro"
+
 
 
 # Use CoffeeScript for .coffee assets and views
@@ -62,7 +69,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard-rspec', require: false
-
+  gem 'rails_real_favicon'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

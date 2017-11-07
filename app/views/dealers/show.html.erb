@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Co name:</strong>
+  <%= @dealer.co_name %>
+</p>
+
+<p>
+  <strong>Contact number:</strong>
+  <%= @dealer.contact_number %>
+</p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @dealer.street_address %>
+</p>
+
+<p>
+  <strong>Suburb:</strong>
+  <%= @dealer.suburb %>
+</p>
+
+<p>
+  <strong>About us:</strong>
+  <%= @dealer.about_us %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @dealer.text %>
+</p>
+
+<%= link_to 'Edit', edit_dealer_path(@dealer) %> |
+<%= link_to 'Back', dealers_path %>
