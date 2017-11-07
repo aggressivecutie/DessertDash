@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe "dealers/new", type: :view do
   before(:each) do
     assign(:dealer, Dealer.new(
-      :co_name => "MyString",
-      :contact_number => "",
+      :company_name => "MyString",
+      :contact_number => "MyString",
       :street_address => "MyText",
       :suburb => "MyString",
-      :about_us => "MyString",
-      :text => "MyString"
+      :about_us => "MyText",
+      :image_data => "MyText"
     ))
   end
 
@@ -17,7 +17,7 @@ RSpec.describe "dealers/new", type: :view do
 
     assert_select "form[action=?][method=?]", dealers_path, "post" do
 
-      assert_select "input[name=?]", "dealer[co_name]"
+      assert_select "input[name=?]", "dealer[company_name]"
 
       assert_select "input[name=?]", "dealer[contact_number]"
 
@@ -25,9 +25,9 @@ RSpec.describe "dealers/new", type: :view do
 
       assert_select "input[name=?]", "dealer[suburb]"
 
-      assert_select "input[name=?]", "dealer[about_us]"
+      assert_select "textarea[name=?]", "dealer[about_us]"
 
-      assert_select "input[name=?]", "dealer[text]"
+      assert_select "textarea[name=?]", "dealer[image_data]"
     end
   end
 end

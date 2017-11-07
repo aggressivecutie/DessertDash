@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+  resources :users
   devise_for :dealers
   resources :dealers
   root 'static_pages#home'

@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :co_name %>
-    <%= form.text_field :co_name, id: :dealer_co_name %>
+    <%= form.label :company_name %>
+    <%= form.text_field :company_name, id: :dealer_company_name %>
   </div>
 
   <div class="field">
@@ -33,14 +33,14 @@
 
   <div class="field">
     <%= form.label :about_us %>
-    <%= form.text_field :about_us, id: :dealer_about_us %>
+    <%= form.text_area :about_us, id: :dealer_about_us %>
   </div>
 
   <div class="field">
-    <%= form.label :text %>
-    <%= form.text_field :text, id: :dealer_text %>
-  </div>
-
+      <%= form.label :image %>
+      <%= form.file_field :image, id: :post_image_data %>
+    </div>
+    
   <div class="actions">
     <%= form.submit %>
   </div>
