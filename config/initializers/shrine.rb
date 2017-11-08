@@ -1,11 +1,10 @@
-require "shrine"
 require "cloudinary"
 require "shrine/storage/cloudinary"
 
 Cloudinary.config(
-  cloud_name: ENV["cloud_shrine_name"],
-  api_key:    ENV["cloud_shrine_api"],
-  api_secret: ENV["cloud_shrine_secret"],
+  cloud_name: ENV["CLOUDINARY_CLOUD_NAME"],
+  api_key:    ENV["CLOUDINARY_API_KEY"],
+  api_secret: ENV["CLOUDINARY_API_SECRET"],
 )
 
 
@@ -16,3 +15,13 @@ Shrine.storages = {
 
 Shrine.plugin :activerecord
 Shrine.plugin :cached_attachment_data # for forms
+# require "shrine"
+# require "shrine/storage/file_system"
+#
+# Shrine.storages = {
+#   cache: Shrine::Storage::FileSystem.new("public", prefix: "uploads/cache"), # temporary
+#   store: Shrine::Storage::FileSystem.new("public", prefix: "uploads/store"), # permanent
+# }
+#
+# Shrine.plugin :activerecord
+# Shrine.plugin :cached_attachment_data # for forms

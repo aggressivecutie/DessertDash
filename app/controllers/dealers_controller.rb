@@ -1,4 +1,5 @@
 class DealersController < ApplicationController
+  before_action :authenticate_dealer!
   before_action :set_dealer, only: [:show, :edit, :update, :destroy]
 
   # GET /dealers
@@ -10,6 +11,7 @@ class DealersController < ApplicationController
   # GET /dealers/1
   # GET /dealers/1.json
   def show
+    @dealers = Dealer.find(params[:id])
   end
 
   # GET /dealers/new
@@ -64,11 +66,15 @@ class DealersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_dealer
-      @dealer = Dealer.find(params[:id])
+      if params[:id]
+        @dealer = Dealer.find(params[:id])
+      else
+        @dealer = Dealer.find_by(user: current_user)
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dealer_params
-      params.require(:dealer).permit(:company_name, :contact_number, :street_address, :suburb, :about_us, :image_data)
+      params.require(:dealer).permit(:company_name, :contact_number, :street_address, :suburb, :about_us, :image)
     end
-end
+  end
