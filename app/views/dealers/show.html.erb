@@ -27,7 +27,10 @@
 
 <p>
   <strong>Image:</strong>
+  <br>
   <img src="<%= @dealer.image_url %>">
 </p>
+
 <%= link_to 'Edit', edit_dealer_path(@dealer) %> |
 <%= link_to 'Back', dealers_path %>
+<%= link_to 'Current Desserts listing', dessert_url%>

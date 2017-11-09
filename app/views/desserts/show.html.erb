@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @dessert.title %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dessert.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dessert.description %>
+</p>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_company_name %>
+</p>
+
+<p>Image:</strong>
+<br>
+<img src="<%= @dessert.image_data %>">
+</p>
+
+<%= link_to 'Edit', edit_dessert_path(@dessert) %> |
+<%= link_to 'Back', dealer_desserts_path %>

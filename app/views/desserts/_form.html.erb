@@ -1,0 +1,22 @@
+<%= form_with(model: [@dealer, @dealer.desserts.build]) do |form| %>
+
+  <div class="field">
+    <%= form.text_field :attr, placeholder: "Dessert Title", id: :dessert_title %>
+  </div>
+
+  <div class="field">
+    <%= form.text_field :attr, placeholder: "Price", id: :dessert_price %>
+  </div>
+
+  <div class="field">
+    <%= form.text_area :attr, placeholder: "Desciption", id: :dessert_description %>
+  </div>
+
+  <div class="field">
+      <%= form.file_field :image, id: :post_image_data %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

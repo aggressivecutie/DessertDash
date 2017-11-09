@@ -35,7 +35,8 @@ gem 'cancancan', '~> 2.0'
 
 #figaro for API SUPERSECRETS!
 gem "figaro"
-
+#Faker to seed dummy data
+gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
 
 
 # Use CoffeeScript for .coffee assets and views

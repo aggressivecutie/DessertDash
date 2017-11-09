@@ -6,13 +6,16 @@ class DessertMailer < ApplicationMailer
   #   en.dessert_mailer.dd_record_notification.subject
   #
   def dd_record_notification
-    @greeting = "Hi"
+    @greeting = "Thank You for signing up to Dessert Dash!"
 
     mail to: "to@example.org"
   end
-  def new_user_notification(user)
+  def new_user_notification(@user)
     @user = user
     mail to: @user.email, subject: "Welcome User"
   end
+
+  def create
+
 
 end

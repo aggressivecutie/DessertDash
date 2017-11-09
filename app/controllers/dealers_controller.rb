@@ -77,4 +77,4 @@ class DealersController < ApplicationController
     def dealer_params
       params.require(:dealer).permit(:company_name, :contact_number, :street_address, :suburb, :about_us, :image)
     end
-  end
+end

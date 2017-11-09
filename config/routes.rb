@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
 
+
   devise_for :users
   resources :users
+
   devise_for :dealers
-  resources :dealers
+
+  resources :dealers, shallow: true do
+    resources :desserts
+  end
+
+
   root 'static_pages#home'
   get 'static_pages/home'
 

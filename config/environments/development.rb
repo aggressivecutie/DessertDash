@@ -31,8 +31,8 @@ Rails.application.configure do
     :address => "smtp.mailgun.org",
     :port => 587,
     :domain => "sandbox43c156b1b6824c6383a4356b170d2eae.mailgun.org",
-    :user_name => "postmaster@sandbox43c156b1b6824c6383a4356b170d2eae.mailgun.org ",
-    :passowrd => " "
+    :user_name => ENV["MAILGUN_USERNAME"],
+    :passowrd => ENV["MAILGUN_PASSWORD"]
   }
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
