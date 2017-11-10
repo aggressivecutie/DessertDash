@@ -43,11 +43,11 @@ Dessert Dash! A dessert delivery platform where the seller, buyer and delivery p
 ![alt text] [Dessert_Dash_ERD]
 
 ## Wireframes
-![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/DealerListingWireframe.png)
-![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/DessertListingWireframe.png)
-![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/LandingPage.png)
-![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/LoginWireframe.png)
-![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/RegistrationWireframe.png)
+- ![Dealer Listing Wireframes] (images/DealerListingWireframe.png)
+- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/DessertListingWireframe.png)
+- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/LandingPage.png)
+- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/LoginWireframe.png)
+- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/RegistrationWireframe.png)
 
 ## Current Project Progression
 - The Dealer section of the app is currently complete with the ability to post desserts however there are still some bugs that need to be fixed.
