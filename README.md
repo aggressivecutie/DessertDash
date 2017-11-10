@@ -63,9 +63,19 @@ Dessert Dash! A dessert delivery platform where the seller, buyer and delivery p
 
 - App styling.
 
-## Prerequisites
+## Prerequisites and Gems
 - Ruby -v 2.4.1
 - Rails -v 5.1.4
+- devise gem
+- bootstap 4 gem
+- shrine gem
+- shrine-cloudinary gem
+- rolify gem
+- cancancan 2.0 gem
+- figaro gem
+- Faker gem
+
+
 
 ## Installing
 - once downloaded, make sure you bundle install to get all the gems and dependencies up and running.
@@ -85,4 +95,7 @@ When deploying with heroku follow the heroku guide.
 
 4) figaro heroku:set -e production  
 
-App currently deployed at https://dessert-dash.herokuapp.com/
+### App currently deployed at https://dessert-dash.herokuapp.com/
+
+### Trello Project Planning and Progression
+https://trello.com/b/y3ppEXNn/dessert-dash
