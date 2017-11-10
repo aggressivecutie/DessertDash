@@ -37,17 +37,17 @@ Dessert Dash! A dessert delivery platform where the seller, buyer and delivery p
 - As a small business, I would like to be able to expand my customer base, so that my business will have the most amount of exposure possible.
 
 ## Workflow diagram
-![alt text] [Dessert_Dash_User_Work_Flow]
+[Workflow diagram]![alt text](/docs/Dessert_Dash_User_Work_Flow.png)
 
 ## Entity Relationship diagram
-![alt text] [Dessert_Dash_ERD]
+[ERD]![alt text](/docs/Dessert_Dash_ER.png)
 
 ## Wireframes
-- ![Dealer Listing Wireframes] (images/DealerListingWireframe.png)
-- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/DessertListingWireframe.png)
-- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/LandingPage.png)
-- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/LoginWireframe.png)
-- ![alt text] (https://github.com/aggressivecutie/DessertDash/tree/master/app/assets/images/RegistrationWireframe.png)
+- [Dealer Listing Wireframes]![alt text](images/DealerListingWireframe.png)
+- [Dessert Listings]![alt text](/docs/DessertListingWireframe.png)
+- [Landing Page]![alt text](/docs/LandingPage.png)
+- [Login Wireframe]![alt text](/docs/LoginWireframe.png)
+- [Registration Page]![alt text](/docs/RegistrationWireframe.png)
 
 ## Current Project Progression
 - The Dealer section of the app is currently complete with the ability to post desserts however there are still some bugs that need to be fixed.
