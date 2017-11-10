@@ -84,3 +84,5 @@ When deploying with heroku follow the heroku guide.
 3) heroku run rake db:migrate
 
 4) figaro heroku:set -e production  
+
+App currently deployed at https://dessert-dash.herokuapp.com/
