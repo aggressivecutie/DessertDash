@@ -4,9 +4,6 @@ class DessertsController < ApplicationController
   # GET /desserts
   # GET /desserts.json
   def index
-    @dessert.dealer_id = current_user.id
-    @dealer = Dealer.find(params[:dealer_id])
-
     @desserts = Dessert.all
   end
 
@@ -23,30 +20,28 @@ class DessertsController < ApplicationController
 
   # GET /desserts/1/edit
   def edit
-
+    @dessert = Dessert.find(params[:id])
   end
 
   # POST /desserts
   # POST /desserts.json
   def create
+    @dessert = Dessert.new(dessert_params)
 
-    @dealer = Dealer.find(params[:dealer_id])
+    respond_to do |format|
 
-    @dessert = @dealer.desserts.build(dessert_params)
-    @dessert.dealer_id = current_user.id
-
-
-    if @dessert.save
-      redirect_to @dessert, notice: 'Dessert was successfully saved.'
-    else
-      redirect_to @dessert, notice: 'Dessert did not save.'
-    # respond_to do |format|
-    #   if @dessert.save
-    #     format.html { redirect_to @dessert, notice: 'Dessert was successfully created.' }
-    #     format.json { render :show, status: :created, location: @dessert }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @dessert.errors, status: :unprocessable_entity }
+      if @dessert.save
+          redirect_to @dessert, notice: 'Dessert was successfully saved.'
+      else
+        redirect_to @dessert, notice: 'Dessert did not save.'
+      # respond_to do |format|
+      #   if @dessert.save
+      #     format.html { redirect_to @dessert, notice: 'Dessert was successfully created.' }
+      #     format.json { render :show, status: :created, location: @dessert }
+      #   else
+      #     format.html { render :new }
+      #     format.json { render json: @dessert.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -77,6 +72,8 @@ class DessertsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_dessert
+      @dealer = Dealer.find(params[:id])
+
       @dessert = Dessert.find(params[:id])
     end
 

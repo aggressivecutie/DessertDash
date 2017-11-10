@@ -21,7 +21,6 @@
         <td><%= dessert.description %></td>
         <td><%= dessert.dealer_id %></td>
         <td><%= link_to 'Show', desserts_url %></td>
-        <td><%= link_to 'Edit', edit_dessert_url %></td>
         <td><%= link_to 'Destroy', dessert, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -30,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Dessert', new_dealer_dessert_path %>
+<%= link_to 'New Dessert', new_dessert_path %>

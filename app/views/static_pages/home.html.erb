@@ -2,8 +2,21 @@
 <p>Landing Page</p>
 
 
-<a href="/users/sign_in"><button type="button">Addict and Dasher sign in!</button></a>
+<a href="/users"><button type="button">Addicts and Dashers!</button></a>
 
 <br>
 
-<a href="/dealers">Dealer's sign in here!</a>
+<a href="/dealer">Dealer's sign in here!</a>
+
+<hr>
+<% @dealers.each do |dealer| %>
+  <tr>
+    <td><%= dealer.company_name %></td><br>
+    <td><%= dealer.contact_number %></td><br>
+    <td><%= dealer.street_address %></td><br>
+    <td><%= dealer.suburb %></td><br>
+    <td><%= dealer.about_us %></td><br>
+    <td><img src="<%= dealer.image_url %>"></td>
+  </tr>
+  <hr>
+<%end%>

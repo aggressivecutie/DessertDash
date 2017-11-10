@@ -1,4 +1,4 @@
-<%= form_with(model: [@dealer, @dealer.desserts.build]) do |form| %>
+<%= form_with(model: @dessert) do |form| %>
 
   <div class="field">
     <%= form.text_field :attr, placeholder: "Dessert Title", id: :dessert_title %>

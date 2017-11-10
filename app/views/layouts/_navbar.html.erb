@@ -6,16 +6,20 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <% if user_signed_in? %>
+          <%= link_to 'User Log Out', destroy_user_session_path, method: :delete%>
+        <% else %>
+          <%= link_to 'User Login', new_user_session_path%>
+        <%end%>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="/">Link</a>
       </li>
       <li class="nav-item active">
         <% if dealer_signed_in? %>
-          <%= link_to 'Log Out', destroy_dealer_session_path, method: :delete%>
+          <%= link_to 'Dealer Log Out', destroy_dealer_session_path, method: :delete%>
         <% else %>
-          <%= link_to 'Login', new_dealer_session_path%>
+          <%= link_to 'Dealer Login', new_dealer_session_path%>
         <%end%>
       </li>
     </ul>

@@ -6,9 +6,12 @@ Rails.application.routes.draw do
 
   devise_for :dealers
 
-  resources :dealers, shallow: true do
+  authenticate :dealer do
+    resources :dealers
     resources :desserts
   end
+
+
 
 
   root 'static_pages#home'
