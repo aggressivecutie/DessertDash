@@ -40,11 +40,11 @@ Dessert Dash! A dessert delivery platform where the seller, buyer and delivery p
 [Workflow diagram]![alt text](/docs/Dessert_Dash_User_Work_Flow.png)
 
 ## Entity Relationship diagram
-[ERD]![alt text](/docs/Dessert_Dash_ER.png)
+[ERD]![alt text](/docs/Dessert_Dash_ERD.png)
 
 ## Wireframes
-- [Dealer Listing Wireframes]![alt text](images/DealerListingWireframe.png)
-- [Dessert Listings]![alt text](/docs/DessertListingWireframe.png)
+- [Dealer Listing Wireframes]![alt text](/docs/DealerListingWireframe.png)
+- [Dessert Listings]![alt text](/docs/DessertListingsWireframe.png)
 - [Landing Page]![alt text](/docs/LandingPage.png)
 - [Login Wireframe]![alt text](/docs/LoginWireframe.png)
 - [Registration Page]![alt text](/docs/RegistrationWireframe.png)
